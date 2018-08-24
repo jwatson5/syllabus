@@ -1,0 +1,368 @@
+\documentclass[12pt]{letter}
+\usepackage[top=1.0in,left=1.0in,right=1.0in,bottom=1.0in]{geometry}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{wrapfig}
+\usepackage[super]{nth}
+\usepackage{longtable}
+\usepackage{xcolor, soul}
+\usepackage[hidelinks]{hyperref}
+\usepackage[hyphenbreaks]{breakurl}
+\usepackage{adjustbox}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+\usepackage{lmodern}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage[T1]{fontenc}
+
+\pagestyle{empty}
+
+\def\dotfillsmall{\leavevmode\xleaders\hbox to 0.3em{\hfil.\hfil}\hfill\kern0pt}
+
+
+% this creates a highlighted gray bar across the screen
+%\definecolor{light-gray}{gray}{0.9}
+%\sethlcolor{light-gray}
+%\begin{tikzpicture}[overlay]
+%\fill[light-gray] (-2pt,-4pt) rectangle (\textwidth,2.3ex);
+%\node (logo) at (\textwidth - \logowidth / 2.5,\logoheight / 5.5){\includegraphics[width=\logowidth]{approved_una_logo.png}};
+%\end{tikzpicture}
+
+%\begin{tikzpicture}[overlay]
+%\node (logo) at (5.75in,-.5in){\includegraphics[width=\logowidth]{approved_una_logo}};
+%\end{tikzpicture}
+
+%\definecolor{ulblue}{RGB}{0,255,255}
+
+\hypersetup{colorlinks=false,urlbordercolor=blue,pdfborderstyle={/S/U/W 1}}
+
+\urlstyle{same}
+
+\newlength{\logowidth}
+\setlength{\logowidth}{1.5in}
+\newlength{\logoheight}
+\setlength{\logoheight}{1.75in}
+\newlength{\tmp}
+\setlength{\tmp}{1ex}
+\setlength{\parindent}{0pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\cfoot{Page \thepage \hspace{1pt} of \pageref*{LastPage}}
+
+\newcommand{\customhref}[2]{
+	\href{#1}{\color{blue}\burl{#2}}	
+}
+
+	%----- PROF CONFIG ------------------------
+\newcommand{\semester}{FALL SEMESTER, 2018}
+\input{2018fal/cis44401}
+\input{instructor}
+
+\begin{document}
+\thispagestyle{empty}
+
+%\customhref{https://www.una.edu/student-conduct/docs/Academic\%20Honesty\%20PolicyAcademic\%20Honesty\%20Incident\%20Form.pdf}{www.una.edu/student-conduct/docs/Academic\%20Honesty\%20PolicyAcademic\%20Honesty\%20Incident\%20Form.pdf}
+
+\begin{large}
+
+
+\begin{wrapfigure}{r}{\logowidth}
+ \includegraphics[width=\logowidth]{img/approved_una_logo}
+\end{wrapfigure}
+
+\textbf{COURSE SYLLABUS}\\ \\
+\textbf{COLLEGE OF BUSINESS}\\ \\
+\textbf{\semester}
+ 
+  \vspace*{28pt}
+  \textbf{\course} \\ \\ 
+  \textbf{\coursetitle}
+\end{large}
+
+\vspace*{20pt}
+\begin{longtable}{@{}p{2.6in}@{}p{3.8in}}
+\textbf{INSTRUCTOR:} & \instrname \\
+	& \instrinfo \\
+\\
+\textbf{OFFICE HOURS:} & \instrofficehours \\
+\\
+\textbf{OFFICE LOCATION:} & \instroffice \\
+\\
+\textbf{OFFICE TELEPHONE:} & \instrtel \hspace{.1em} (please leave message) \\
+\\
+\textbf{E-MAIL:} & Canvas \course \hspace{.1em} Course Inbox (preferred) \\
+& UNA Portal: \customhref{mailto:\instremail}{\instremail} (emergency) \\
+\\
+\textbf{FAX:} & 256-765-4811 (CSIS Department Office) \\
+\\
+\textbf{CLASS HOMEPAGE:} & Go to \customhref{https://www.una.edu}{www.una.edu}. At the top of the webpage, click the Canvas hyperlink (or you may go directly to \customhref{https://una.instructure.com/login/ldap}{https://una.instructure.com/login/ldap}). Sign in to Canvas using your UNAPortal username and password. On your Dashboard, click \course. \\
+\\
+\textbf{CLASS LOCATION:} & \courseloc \\
+\\
+\textbf{COURSE TIME:} & \coursetime \\
+\\
+\textbf{COURSE DESCRIPTION:} & \coursedesc \\
+\\
+\textbf{SECTION NUMBER:} & \coursesec \\
+\\
+\textbf{CREDIT HOURS:} & \coursecredithours \\
+\\
+\textbf{PREREQUISITE:} & \courseprereq \\
+\\
+\textbf{COURSE DELIVERY METHOD:} & \coursedelmethod
+\end{longtable}
+
+\textbf{COURSE OBJECTIVES:} \par
+The student will be able to:
+ \begin{enumerate}[topsep=-6pt]
+ \courseobjectives
+ \end{enumerate}
+\vspace{12pt}
+
+\textbf{TOPICS COVERED:}
+% \begin{itemize}[label={}] % this is for no label
+ \begin{itemize}
+ \coursetopics
+ \end{itemize}
+\vspace{12pt}
+
+
+\textbf{COURSE EVALUATION PROCESS (Grade Components):} \par
+\vspace{12pt}
+\vbox{\coursegrades}
+ \par 
+
+\vspace{20pt}
+\vbox{\par Final grades will be assigned on the basis of the following grading scale: 
+\begin{longtable}[l]{@{\hspace{1in}}p{1.2in}@{}p{1in}}
+	90 to 100\% & A \\
+	80 to 89\% & B \\
+	70 to 79\% & C \\
+	60 to 69\% & D \\
+	Below 60\% & F
+\end{longtable}}
+
+%A=90-100\%, B=80-89\%, C=70-79\%, D=60-69\%, F=Below 60\%. \\
+%$\ast$ total available points may be adjusted based on class progress at the discretion of the instructor. \par 
+
+\textbf{REQUIRED TEXTBOOK, SOFTWARE, AND SUPPLIES:} \par 
+\begin{longtable}[l]{ c p{5in} }
+	\coursetext
+ %& \hangindent .4in \coursetext
+\end{longtable}
+
+%You have several options for purchasing the required textbook and simulation software for this course. Please see the table below and choose the option that best meets your needs.
+
+%\vspace{12pt}
+%\begin{itemize}[label={}, topsep=-6pt]
+%	\item PURCHASE OPTION 1:
+%	\begin{itemize}[label={}, topsep=-6pt]
+%		\item ISBN 9781337070294
+%		\item This the SAM simulation software with a printed textbook.
+%		\begin{itemize}[topsep=-6pt]
+%			\item May be purchased from the UNA Bookstore for \$153.75.
+%			\item May be purchased directly from Cengage for \$113.01 at the following website \customhref{https://services.cengagebrain.com/course/site.html?id=2033295}{https://services.cengagebrain.com/course/site.html?id=2033295}. \\
+%		\end{itemize}
+%	\end{itemize}
+%	\item PURCHASE OPTION 2:
+%	\begin{itemize}[label={}, topsep=-6pt]
+%		\item ISBN 9781337113922
+%		\item This is the SAM simulation software with an integrated e-book.
+%		\begin{itemize}[topsep=-6pt]
+%			\item May be purchased from the UNA Bookstore for \$102.25.
+%			\item May be purchased directly from Cengage for \$85.00 at the following website \customhref{https://services.cengagebrain.com/course/site.html?id=2033295}{https://services.cengagebrain.com/course/site.html?id=2033295}.
+%		\end{itemize}
+%	\end{itemize}
+%\end{itemize}
+%\vspace{12pt}
+
+%Students may download a free copy of Microsoft Office 2016 to their home PCs. For more information, see this website: \customhref{https://www.una.edu/its/Office365Advantage/studentsFreeOffice.html}{https://www.una.edu/its/Office365Advantage/studentsFreeOffice.html}. \par
+
+%\vspace{12pt}
+%\vbox{Required Supplies:
+%\begin{itemize}[label={--}, topsep=-6pt]
+%	\item Desktop or laptop PC required. Tablet computers and Mac computers are not compatible with the software being used in this course. If you live local, you may use the desktop computers available in the Keller Hall computer lab (K 233) or Collier Library.
+%	\item Webcam and microphone (built-in or external) are required for use with Examity\textregistered\ exam proctoring. You may test your webcam at \customhref{https://www.testmycam.com}{www.testmycam.com}. 
+%\end{itemize}}
+
+%\vspace{20pt}
+%\vbox{Recommended Supplies:
+%\begin{itemize}[label={--}, topsep=-6pt]
+%	\item Portable USB drive: recommended
+%	\item Computer headset: recommended if working in campus labs
+%\end{itemize}}
+%\vspace{12pt}
+
+
+
+\textbf{IMPORTANT TECHNICAL SUPPORT CONTACT INFORMATION:} \par
+UNA Technical Support:
+\begin{itemize}[topsep=-6pt]
+\item Canvas Support: Click the Help icon on your navigation menu and then click Report a Problem to submit a ticket to Canvas Tech Support. If you cannot log-in to Canvas, then please e-mail UNA Information Technology Services (ITS) Support at \customhref{mailto:helpdesk@una.edu}{helpdesk@una.edu}. In this email, include your full name, UNA email address, an alternative email address (if applicable), and a phone number where you can be reached.
+\item Canvas FAQ: \customhref{https://www.una.edu/distance/help/canvas.html}{www.una.edu/distance/help/canvas.html}.
+\item UNAPortal FAQ: \customhref{https://www.una.edu/faq/}{www.una.edu/faq/}.
+\item UNA Information Technology Services Support: \customhref{mailto:helpdesk@una.edu}{helpdesk@una.edu} (from your UNA portal e-mail if possible).
+\item Microsoft Office 365 Download: \\ \customhref{https://www.una.edu/its/Office365Advantage/studentsFreeOffice.html}{https://www.una.edu/its/Office365Advantage/studentsFreeOffice.html}.
+\end{itemize}
+%\vspace{12pt}
+
+%SAM Software Technical Support:
+%\begin{itemize}[topsep=-6pt]
+%\item SAM Login Page: \customhref{https://sam.cengage.com}{https://sam.cengage.com}
+%\item SAM Book/Software Purchase and Registration: \customhref{https://www.cengagebrain.com/course/2033295}{https://www.cengagebrain.com/course/2033295}
+%\item SAM Support Number: (800) 990-8211
+%\item SAM Support Website: \customhref{https://support.cengage.com/magellanweb/ClassLandingPage.aspx?optyId=2033295\&AccountId=1-U8-36\&TechCode=TPC04\&CourseName=CIS\%20125\%20Business\%20Software\%20Applications}{https://support.cengage.com/magellanweb/ClassLandingPage.aspx?optyId=2033295\&AccountId=1-U8-36\&TechCode=TPC04\&CourseName=CIS\%20125\%20Business\%20Software\%20Applications}
+%\end{itemize}
+%\vspace{12pt}
+
+%Examity\textregistered\ Technical Support:
+%\begin{itemize}[topsep=-6pt]
+%\item Email: \customhref{support@examity.com}{support@examity.com}
+%\item Phone: (855) 392-6489
+%\end{itemize}
+\vspace{12pt}
+
+\textbf{ACADEMIC HONESTY--UNIVERSITY POLICY:} \par
+Students are expected to be honorable and observe standards of conduct appropriate to a community of scholars. Additionally, students are expected to behave in an ethical manner. Individuals who disregard the core values of truth and honesty bring disrespect to themselves and the University. A university community that allows academic dishonesty will suffer harm to the reputation of students, faculty and graduates. It is in the best interest of the entire university community to sanction any individual who chooses not to accept the principles of academic honesty by committing acts such as cheating, plagiarism, or misrepresentation. Offenses are reported to the Vice President for Academic Affairs and Provost for referral to the University Student Discipline System for disposition. The Academic Dishonesty Incident Report form may be viewed at \customhref{https://www.una.edu/student-conduct/docs/Academic\%20Honesty\%20PolicyAcademic\%20Honesty\%20Incident\%20Form.pdf}{https://www.una.edu/student-conduct/docs/Academic\%20Honesty\%20PolicyAcademic\%20Honesty\%20Incident\%20Form.pdf}. 
+
+\textbf{STUDENTS WITH DISABILITIES--UNIVERSITY POLICY:} \par
+In accordance with the Americans with Disabilities Act (ADA) and Section 504 of the Rehabilitation Act of 1973, the University offers reasonable accommodations to students with eligible documented learning, physical and/or psychological disabilities. Under Title II of the Americans with Disabilities Act (ADA) of 1990, Section 504 of the Rehabilitation Act of 1973, and the Americans with Disabilities Amendment Act of 2008, a disability is defined as a physical or mental impairment that substantially limits one or more major life activities as compared to an average person in the population. It is the responsibility of the student to contact Disability Support Services to initiate the process to develop an accommodation plan. This accommodation plan will not be applied retroactively. Appropriate, reasonable accommodations will be made to allow each student to meet course requirements, but no fundamental or substantial alteration of academic standards will be made. Students needing assistance should contact Disability Support Services. Complete guidelines and requirements for documentation can be found on the DSS web pages at \customhref{https://www.una.edu/disability-support}{https://www.una.edu/disability-support}.
+
+\textbf{INFORMATION TECHNOLOGY ACCEPTABLE USE--UNIVERSITY POLICY} \par
+This acceptable use statement governs the use of computers, networks, and other information technologies at the University of North Alabama. This statement applies to all students and employees of the University, and to all other persons who may legally or illegally use or attempt to use a computer resource owned by the University, and/or is connected by any means to the campus computing network. As a user of these resources, you are responsible for reading and understanding this document. To view the entire Information Technologies Acceptable Use Statement, please see \customhref{https://www.una.edu/its/una-it-policy.html}{https://www.una.edu/its/una-it-policy.html}.
+
+\textbf{WITHDRAWAL FROM A COURSE--UNIVERSITY POLICY:} \par
+\par \textit{During the W - Grade Withdrawal Period:} \\
+Students may withdraw online through their Portal Self-Service Registration account.  Under Registration - Add/Drop Courses, select ``Web Withdraw'' in the Action drop down for the class.  Then, click Submit.
+\par \textit{During the WP/WF - Grade Withdrawal Period:} \\
+Students may request a withdraw from a class through their Portal Self-Service Registration account.  Under Registration - Add/Drop Courses, select ``Request a Withdraw'' in the Action drop down for the class.  Then, click Submit. The instructor of the course will be notified of the request, and if approved, he or she will assign a grade of WP or WF.  Once the grade has been officially recorded, the student will receive notification that the withdrawal request has been approved and processed.
+\par Withdrawing from a course before the deadline will not affect a student's GPA or academic standing. A notation of W, WP or WF is made on a student's transcript depending on the timing of course withdrawal. See Schedule of Classes for dates.
+\par Students are strongly advised not to withdraw from courses unless absolutely necessary. \textbf{Students receiving Financial Aid} should check with the Student Financial Services before withdrawing from classes. Student progress toward degree completion is checked every semester for students receiving federal grants and loans. Students must pass and complete 75\% of all work attempted to maintain financial aid. \textbf{Student Athletes} should check with the Athletic Department as course withdrawal could affect eligibility for competition.
+
+\textbf{TITLE IX--UNIVERSITY POLICY} \par
+The University of North Alabama has an expectation of mutual respect. Students, staff, administrators, and faculty are entitled to a working environment and educational environment free of discriminatory harassment. This includes sexual violence, sexual harassment, domestic and intimate partner violence, stalking, gender-based discrimination, discrimination against pregnant and parenting students, and gender-based bullying and hazing.
+
+\par Faculty and staff are required by federal law to report any observation of harassment (including online harassment) as well as any notice given by students or colleagues of any of the behaviors noted above. Retaliation against any person who reports discrimination or harassment is also prohibited. UNA's policies and regulations covering discrimination and harassment may be accessed at \customhref{https://www.una.edu/titleix/}{https://www.una.edu/titleix/}. If you have experienced or observed discrimination or harassment, confidential reporting resources can be found on the website or you may make a formal complaint by contacting the Title IX Coordinator at 256-765-4223.
+
+\textbf{UNA PORTAL--UNIVERSITY POLICY} \par
+The University of North Alabama's official communication vehicle is UNA Portal. You may access your UNA Portal email through the University's homepage at \customhref{https://www.una.edu/}{https://www.una.edu/}. The link to Portal is at the top of the page. It is important for students to read their UNA Portal e-mail on a regular basis for information regarding University deadlines, policies, and events. These messages are outside your Canvas courses and relate to ALL University communication. Please understand the importance of each communication vehicle and the distinction between the two.
+
+\textbf{COMMUNICATION AND NETIQUETTE--COLLEGE OF BUSINESS POLICY} \par
+Students are encouraged to communicate with their instructors throughout the semester. Please allow up to 48 hours for a reply to your email or phone messages. Correspondence received on Fridays and University Holidays will not be addressed until the next regularly scheduled business day at UNA. In circumstances where a longer response time is needed, faculty will notify the student.
+\begin{itemize}
+	\item Email Communication: Please use the Canvas Inbox when possible. In case of emergencies use the following email address \customhref{mailto:\instremail}{\instremail}. This email should be sent from your UNA Portal email account, if possible.
+	\item Phone Communication: When leaving a voicemail, leave your name, phone number, and message. Please speak slowly and clearly.
+	\item Face-to-face Communication: You may drop by during posted office hours or you may email to request an appointment that is more convenient to your schedule.
+\end{itemize}
+
+When communicating in an online format (i.e., email, chat, discussions, etc.) please adhere to the standard rules of netiquette. The following summary is taken from \customhref{https://www.education.com/reference/article/netiquette-rules-behavior-internet/}{https://www.education.com/reference/article/netiquette-rules-behavior-internet/}. 
+
+\begin{itemize}
+	\item Identify yourself. Begin messages with a salutation and end them with your name.
+	\item Include a subject line. Give a descriptive phrase in the subject line of the message header that tells the topic of the message.
+	\item Avoid sarcasm. People who don't know you may misinterpret its meaning.
+	\item Respect others' privacy. Do not quote or forward personal email without the original author's permission.
+	\item Acknowledge and return messages promptly.
+	\item Copy with caution. Don't copy everyone you know on each message.
+	\item No spam (a.k.a. junk mail). Don't contribute to worthless information on the Internet by sending or responding to mass postings of chain letters, rumors, etc.
+	\item Be concise. Keep messages concise--about one screen, as a rule of thumb.
+	\item Use appropriate language. Avoid coarse, rough, or rude language. Observe good grammar and spelling.
+	\item Use appropriate intensifiers to help convey meaning. Avoid ``flaming'' (online ``screaming'') or sentences typed in all caps. Use asterisks surrounding words to indicate italics used for emphasis.
+\end{itemize}
+
+\textbf{ATTENDANCE AND PARTICIPATION} \par
+UNIVERSITY POLICY: Regular and punctual attendance at all scheduled classes and activities is expected of all students and is regarded as integral to course credit. Each student is directly responsible to the individual professor for absences and for making up work missed. Particular policies and procedures on absences and makeup work are established in writing for each class, are announced by the professor at the beginning of the term, and for excessive absences, may provide for appropriate penalties including reduction in grades or professor-initiated withdrawal from class. Official written excuses for absences are issued only for absences incurred in connection with university-sponsored activities. For all other types of group or individual absences, including illness, authorization or excuse is the province of the individual professor.
+
+\par CSIS POLICY: Whenever a student's cumulative absences (or lack of course activity for online courses) for any reason--excused or unexcused--exceed the equivalent of three weeks of scheduled classes and activities (one week in each four-week session or two weeks in the eight week summer term), no credit may be earned for the course at the discretion of the professor.
+
+%\par Since this is an online class, your attendance will be determined by your active participation in the course. Additionally, you are expected to check your Canvas Inbox and Canvas Course Announcements for new postings at least twice weekly.
+
+\textbf{INSTRUCTOR RESPONSE TIME} \par
+Exams will be graded automatically when submitted to the system. For other assignments, the instructor will under most circumstances complete grading of assignments within 1 week of submission.
+
+%\begin{itemize}
+%	\item CANVAS: All assignments uploaded to Canvas will be manually graded within one week of the due date.
+	%\item SAM: All assignments and exams submitted to SAM are graded automatically upon submission by the SAM software and will be imported into Canvas once per week after the due date has passed.
+%\end{itemize}
+
+\textbf{MINIMUM TECHNOLOGY REQUIREMENTS}
+
+\begin{itemize}
+	\item Students should have access to a desktop or laptop PC with Microsoft Office 2016. Currently enrolled students may download a free copy of Microsoft Office to their home PCs (which will be active for the duration of enrollment). For more information about this free download, review the following webpage: \customhref{https://www.una.edu/its/Office365Advantage/studentsFreeOffice.html}{https://www.una.edu/its/Office365Advantage/studentsFreeOffice.html} 
+	
+	\begin{quote}
+	\color{red}\textit{Mac computers are not compatible with all of the Microsoft Office features that are required in this course. If you do not have a PC in your household, you might want to check with a friend or family member to see if they have a PC you can borrow to complete assignments. Also, check with your local public library to see if they have the appropriate PC/software that you can use when completing assignments. If you live locally, you can always come to the UNA library or computer labs to complete assignments.}
+    \end{quote}
+	
+	\item Webcam and microphone (built-in or external) are required for use with online testing. You may test your webcam at \customhref{https://www.testmycam.com}{www.testmycam.com}.
+%	\item Personal computers should meet the systems requirements for using SAM simulation software. You may run a system check at the following website: \customhref{https://sam.cengage.com/app/static/browsercheck/index.html}{https://sam.cengage.com/app/static/browsercheck/index.html}.
+%	\item Operating systems should meet the requirements for using both Examity\textregistered\ and Canvas. Currently, Canvas is the most restrictive. Canvas OS requirements can be found on the following website: \customhref{https://community.canvaslms.com/docs/DOC-10721-67952720328}{https://community.canvaslms.com/docs/DOC-10721-67952720328}.
+%	\item Internet browsers should be supported by Examity\textregistered, YouTube, and Canvas. Currently, Canvas is the most restrictive. Canvas browser requirements can be found on the following website: \customhref{https://community.canvaslms.com/docs/DOC-10720}{https://community.canvaslms.com/docs/DOC-10720}.
+	\item A high-speed internet connection is recommended.
+	\item Adobe Acrobat Reader may be required during this course. You may download a free copy of this software from the following website \customhref{https://acrobat.adobe.com/us/en/acrobat/pdf-reader.html}{https://acrobat.adobe.com/us/en/acrobat/pdf-reader.html}.
+\end{itemize}
+
+%\textbf{MINIMUM TECHNICAL SKILLS EXPECTED OF THE STUDENT}
+
+%\begin{itemize}
+%	\item Students should be able to perform basic computer skills, such as opening an application, browsing the internet, reading/composing emails, and uploading/downloading files.
+%	\item Students should be able to log in and navigate Canvas. You may view Canvas ``how to'' guides at the following website \customhref{https://community.canvaslms.com/docs/DOC-4121}{https://community.canvaslms.com/docs/DOC-4121}. There is also a Canvas Orientation for students to complete in the ``Start Here'' module of your Canvas course.
+%	\item Students should be able to log in and navigate SAM. You may view SAM ``how to'' guides at the following website \customhref{https://www.youtube.com/playlist?list=PLtv5E8moFF2rKKdlZO\_QoOg4lZB2bknuE}{https://www.youtube.com/playlist?list=PLtv5E8moFF2rKKdlZO\_QoOg4lZB2bknuE}.
+%\end{itemize}
+
+%\textbf{ASSIGNMENTS} \par
+%Each student is responsible for working through all assignments. Student data files will be provided through Canvas when needed. All assignments should be completed prior to the deadlines shown on the Course Schedule. Start early and work ahead when you can so that if you miss a class or experience technical difficulties you will have time to work it out before the assignment is due. Waiting until the last minute to begin assignments will not justify a late submission.
+
+%\begin{itemize}
+%	\item Students may use the open computer lab in Keller Hall (K233) or computers in the Collier Library. All campus computers are equipped with Microsoft Office 2016 software. Students who wish to work from home may download a free version of Microsoft Office 2016 to their desktop or laptop PCs. For more information, see this website: \customhref{https://www.una.edu/its/Office365Advantage/studentsFreeOffice.html}{https://www.una.edu/its/Office365Advantage/studentsFreeOffice.html}. Make sure your PC meets the software specifications before trying to install.
+%	\item The SAM software can be accessed from any computer (on campus or at home) directly from the internet at the following website: \customhref{https://sam.cengage.com}{https://sam.cengage.com}. It is recommended that a high-speed internet connection be used.
+%\end{itemize}
+
+\textbf{LATE ASSIGNMENTS} \par
+No makeups will be offered for the assignments portion of your grade.
+%Late assignments will receive a 10\% grade penalty per day. Since we use a 3rd party software in this course, the process for submitting late assignments is a little confusing. Please see the outline below for each different type of assignment.
+
+%\begin{itemize}
+%	\item Canvas problem solving assignments - these assignments are always open so you can submit whenever but I deduct points manually when I grade it.
+%	\item SAM Projects - the software is capable of deducting late points automatically for the ``projects'' so the project assignments remain open after the due date and when you submit them the software automatically deducts the late penalty points.
+%	\item SAM Trainings - for some reason the software is NOT capable of deducting late points automatically for the SAM trainings and therefore as soon as the due date for SAM trainings has passed, the link to the assignment disappears so that you no longer have access to it. I will still accept SAM trainings late, just like all of your other work. However, since the ``trainings'' disappear after the due date, if you want to complete it late you will just have to contact me to ask me to re-open it for you. I will be happy to do so. Then, I will manually deduct the late points when I transfer the grades over to Canvas.
+%\end{itemize}
+
+%I apologize for the confusion this may cause. Just remember that ALL assignments will be accepted late with a 10\% grade reduction per day it is late. If you are unable to access an assignment that you wish to submit late, please let me know so I can re-open it for you.
+
+%\textbf{EXAMS} \par
+%In this class, all exams will be taken remotely and proctored by a service called Examity\textregistered. When you log in to your Canvas course, the Start Here module will provide more information on this service, including a Student Quick-Guide on how to use Examity\textregistered. Please set up your profile in Examity\textregistered\ as soon as possible. You will not be able to schedule exams until your profile is complete.
+
+%\par The Course Schedule, which is available on the Start Here module in your Canvas course, details the specific days in which your course exams will be available. It is your responsibility to ``schedule'' an appointment to take each of these exams through Examity\textregistered\ more than 24 hours prior to taking the exam. \textit{\textbf{Disclaimer: If you schedule your exam 24 hours or more prior to taking the exam, there will be no fee for taking the exam. However, if you procrastinate and schedule (or reschedule) your exam within 24 hours of taking the exam, you will be responsible for paying Examity's\textregistered\ on-demand fee of ``\$5.00''}}.
+
+%\vspace{12pt}
+%\vbox{While taking your exam:
+%\begin{itemize}[topsep=-6pt]
+%	\item If you are disconnected or experience a technical problem while you are taking an exam, you must contact Examity\textregistered\ Tech Support for assistance with the issue. You may contact Examity's\textregistered\ technical support team 24/7 via email at \customhref{mailto:support@examity.com}{support@examity.com} or phone at (855) 392-6489. You should also contact your instructor with a summary of the problem and how (or if) it was resolved.
+%	\item Students who wait until after an exam is closed to communicate a technical problem will not be allowed to make up the exam.
+%	\item Attempts to circumvent course security measures, such as Examity\textregistered, will be considered academic dishonesty and dealt with according to the University's Academic Honesty policy \customhref{https://www.una.edu/student-conduct/student-rights-and-responsibilities/academic-honesty.html}{https://www.una.edu/student-conduct/student-rights-and-responsibilities/academic-honesty.html}.
+%\end{itemize}
+%}
+%\vspace{12pt}
+
+\textbf{MAKE-UP EXAMS} \par
+You must inform your instructor \textit{\textbf{prior to an exam}} if you have to miss the exam. If the instructor determines that you have a valid excuse for missing the exam, a makeup exam will be scheduled within one week of the missed exam. If you do not contact your instructor within one week of the exam, you will receive a zero for the missed exam.
+
+\textbf{GRADES} \par
+Every effort will be made to treat each student equally. Students will be graded solely on course performance--not on unrelated factors.
+
+\par \textit{All materials, projects, and tests submitted during the course become the property of the University.}
+
+\textbf{QUESTIONS ABOUT GRADES} \par
+If you feel there is an error in the grading of your assignments and/or exams, you must contact your instructor within one week after the assignment/exam was graded. Your instructor will re-evaluate the assignment/exam and communicate with you the status of the re-evaluation. Inquiries made after a week has passed will not be re-evaluated.
+
+\textbf{STUDENT RESPONSIBILITY} \par
+You are responsible for the grade earned in this class. Your instructor is not responsible for your personal obligations, your maintaining a certain grade point average, or, for international students, ensuring that immigration requirements related to your continued enrollment at the university are met. It is important for students to communicate the need for support with course-related activities throughout the semester rather than only at the end of the semester after final course grades have been determined.  The course evaluation guidelines will be uniformly applied, with no exceptions, to all students.
+
+
+\end{document}
