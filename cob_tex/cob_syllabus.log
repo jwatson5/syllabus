@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.9.23)  9 JAN 2020 10:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.9.23)  29 MAY 2020 12:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -636,7 +636,7 @@ Package hyperref Info: Option `colorlinks' set `false' on input line 40.
 \logoheight=\skip58
 \tmp=\skip59
 
-(./2020spr/cis49902.tex) (./instructor.tex) (./cob_syllabus.aux)
+(./2020sum/cis236i01.tex) (./instructor.tex) (./cob_syllabus.aux)
 \openout1 = `cob_syllabus.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
@@ -809,22 +809,23 @@ LaTeX Font Warning: Font shape `OMS/lmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
 (Font)              for symbol `textbullet' on input line 131.
 
-[2] <img/cis-445.jpg, id=42, 218.8175pt x 218.8175pt>
-File: img/cis-445.jpg Graphic file (type jpg)
- <use img/cis-445.jpg>
-Package pdftex.def Info: img/cis-445.jpg used on input line 156.
-(pdftex.def)             Requested size: 72.26999pt x 72.2701pt.
+[2] <img/cis236ed8.jpg, id=39, 392.46625pt x 500.87125pt>
+File: img/cis236ed8.jpg Graphic file (type jpg)
 
-[3 <./img/cis-445.jpg>]
+<use img/cis236ed8.jpg>
+Package pdftex.def Info: img/cis236ed8.jpg used on input line 156.
+(pdftex.def)             Requested size: 72.26999pt x 92.23174pt.
+ [3 <./img/cis236ed8.jpg>]
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <12> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 241.
  [4] [5] [6]
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <12> not available
 (Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 355.
 
- 
+ [7]
+
 AED: lastpage setting LastPage
-[7]
+[8]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 369.
 Package atveryend Info: Executing hook `AfterLastShipout' on input line 369.
  (./cob_syllabus.aux)
@@ -839,23 +840,22 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 369.
  ) 
 Here is how much of TeX's memory you used:
- 17188 strings out of 494902
- 319636 string characters out of 6179891
- 389950 words of memory out of 5000000
- 20121 multiletter control sequences out of 15000+600000
+ 17184 strings out of 494902
+ 319611 string characters out of 6179891
+ 390524 words of memory out of 5000000
+ 20119 multiletter control sequences out of 15000+600000
  33017 words of font info for 34 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 55i,12n,54p,1272b,418s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-mathsy.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/t
-exmf/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf/fonts/type1/public/lm
-/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/t
-exmf/fonts/type1/public/lm/lmsy10.pfb>
-Output written on cob_syllabus.pdf (7 pages, 289580 bytes).
+ 55i,12n,54p,1272b,422s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbo10.pfb></usr/share
+/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/
+lm/lmsso12.pfb>
+Output written on cob_syllabus.pdf (8 pages, 317090 bytes).
 PDF statistics:
- 125 PDF objects out of 1000 (max. 8388607)
- 105 compressed objects within 2 object streams
- 22 named destinations out of 1000 (max. 500000)
+ 121 PDF objects out of 1000 (max. 8388607)
+ 101 compressed objects within 2 object streams
+ 20 named destinations out of 1000 (max. 500000)
  23 words of extra memory for PDF output out of 10000 (max. 10000000)
 
